@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)http://127.0.0.1:5500/Portfolio/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colorful Portfolio</title>
+  <link rel="stylesheet" href="./Colorful Portfolio_files/all.min.css">
+  <link rel="stylesheet" href="./Colorful Portfolio_files/style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">MyPortfolio</div>
+    <ul class="nav-links">
+      <li><a href="http://127.0.0.1:5500/Portfolio/index.html#home">Home</a></li>
+      <li><a href="http://127.0.0.1:5500/Portfolio/index.html#about">About</a></li>
+      <li><a href="http://127.0.0.1:5500/Portfolio/index.html#skills">Skills</a></li>
+      <li><a href="http://127.0.0.1:5500/Portfolio/index.html#projects">Projects</a></li>
+      <li><a href="http://127.0.0.1:5500/Portfolio/index.html#contact">Contact</a></li>
+    </ul>
+  </header>
+
+  <section id="home" class="section">
+    <h1>Hello, I'm <span>Manogna Gudlavalleti</span></h1>
+    <p>I am <span class="typing">a Creati</span><span class="typed-cursor" aria-hidden="true">|</span></p>
+  </section>
+
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>I'm a passionate Web Developer with  a strong foundation in front-end technologies and a growing interest in web development.</p>
+    <p>
+       I specialize in building responsive, interactive, and visually appealing websites using technologies like <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, and <strong>React</strong>. </p>
+    <p></p> 
+    <p>I love turning ideas into reality through code and designing seamless user experiences.</p><p>
+    </p><p>
+       Beyond coding, I enjoy problem-solving and collaborating with others to create impactful digital experiences.</p>
+    <p> I am also familiar with tools like <strong>Git</strong>, <strong>Figma</strong>, <strong>VS Code</strong>, and platforms like <strong>GitHub</strong> and <strong>Netlify</strong>.
+    </p>
+   <p><strong>Let's build something amazing together!</strong></p>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>My Projects</h2>
+    <div class="project-card">
+      <h3>🌟 Portfolio Website</h3>
+      <p>A responsive personal site built with HTML, CSS, and JavaScript.</p>
+    </div>
+    <div class="project-card">
+      <h3>📱 Mobile UI Design</h3>
+      <p>A colorful app UI designed using Figma and implemented with React Native.</p>
+    </div>
+  </section>
+<section id="skills" class="section">
+    <h2>My Skills</h2>
+    <ul class="skills-list">
+      <li>HTML5, CSS3, JavaScript (ES6+)</li>
+      <li>Responsive Web Design</li>
+      <li>React.js &amp; Tailwind CSS</li>
+      <li>Git &amp; GitHub</li>
+      <li>Basic Node.js and Express.js</li>
+      <li>UI/UX Principles &amp; Figma</li>
+      <li>Debugging &amp; Browser Developer Tools</li>
+      <li>Team Collaboration &amp; Agile Workflow</li>
+    </ul>
+  </section>
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required="" fdprocessedid="8bletb">
+      <input type="email" placeholder="Your Email" required="" fdprocessedid="8u91xt">
+      <textarea placeholder="Your Message" required=""></textarea>
+      <button type="submit" fdprocessedid="67rg4">Send</button>
+    </form>
+    <div class="socials">
+      <a href="http://127.0.0.1:5500/Portfolio/index.html#"><i class="fab fa-github"></i></a>
+      <a href="http://127.0.0.1:5500/Portfolio/index.html#"><i class="fab fa-linkedin"></i></a>
+      <a href="http://127.0.0.1:5500/Portfolio/index.html#"><i class="fab fa-twitter"></i></a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Manogna Gudlavalleti | Created with ❤️ and Coffee</p>
+  </footer>
+
+  <script src="./Colorful Portfolio_files/typed.js@2.0.12"></script>
+  <script src="./Colorful Portfolio_files/script.js.download"></script><style type="text/css" data-typed-js-css="true">
+        .typed-cursor{
+          opacity: 1;
+        }
+        .typed-cursor.typed-cursor--blink{
+          animation: typedjsBlink 0.7s infinite;
+          -webkit-animation: typedjsBlink 0.7s infinite;
+                  animation: typedjsBlink 0.7s infinite;
+        }
+        @keyframes typedjsBlink{
+          50% { opacity: 0.0; }
+        }
+        @-webkit-keyframes typedjsBlink{
+          0% { opacity: 1; }
+          50% { opacity: 0.0; }
+          100% { opacity: 1; }
+        }
+      </style>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+<span id="PING_IFRAME_FORM_DETECTION" style="display: none;"></span></body></html>

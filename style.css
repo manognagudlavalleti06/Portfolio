@@ -1,0 +1,171 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background: linear-gradient(to right, #e66465, #9198e5);
+  color: #131313;
+}
+
+header {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #f5f3f3;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #fbf6f6;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #c1eb07;
+}
+
+.section {
+  padding: 100px 20px;
+  min-height: 100vh;
+  text-align: center;
+}
+
+#home {
+  background: linear-gradient(to right,  #e243eb, #f035ae);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 150px;
+}
+
+#home h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+#home p span.typing {
+  color: #0c0c0c;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+#about, #projects, #contact {
+  background: linear-gradient(to right,  #e243eb, #f035ae);
+}
+#skills {
+  background: linear-gradient(to right,  #e243eb, #f035ae);
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+form input, form textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+form button {
+  background: #ffd700;
+  color: #000;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background: #fff;
+}
+
+.socials {
+  margin-top: 30px;
+}
+
+.socials a {
+  color: #efe9e9;
+  margin: 0 10px;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.socials a:hover {
+  color: #ffd700;
+}
+
+footer {
+  background: #f7f1f1;
+  text-align: center;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.skills-list {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: left;
+}
+
+.skills-list li {
+  background: linear-gradient(to right,  #e243eb, #f035ae);
+  margin-bottom: 10px;
+  padding: 10px;
+  border-left: 5px solid #ffd700;
+  border-radius: 5px;
+}
